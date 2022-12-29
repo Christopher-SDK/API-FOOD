@@ -98,14 +98,6 @@ public class countryController {
         if (country.getContinent() == null || country.getContinent().trim().isEmpty()) {
             throw new ValidationException("Country's continent is obligatory");
         }
-
-        // if((country.getContinent()!="Asia") || (country.getContinent()!="Africa") ||
-        // (country.getContinent()!="Europe") || (country.getContinent()!="North America") || (country.getContinent()!="South America") ||
-        // (country.getContinent()!="Australia") || (country.getContinent()!="Oceania")
-        // || (country.getContinent()!="Antarctica")){
-        // throw new ValidationException("Country's continent doesn't exist");
-        // }
-        
     }
 
     private void existCountryByName(Country country) {
